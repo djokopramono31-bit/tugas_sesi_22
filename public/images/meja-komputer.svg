@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title description">
+  <title id="title">Meja komputer</title>
+  <desc id="description">Ilustrasi komputer desktop di atas meja kayu dengan kursi.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f3ff"/>
+      <stop offset="1" stop-color="#f8eee3"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bd8054"/>
+      <stop offset="1" stop-color="#895334"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" rx="28" fill="url(#background)"/>
+  <circle cx="500" cy="104" r="52" fill="#fff" opacity=".65"/>
+  <path d="M92 356h456" stroke="#d4c4b5" stroke-width="12" stroke-linecap="round"/>
+  <path d="M235 322h210l25 24H210z" fill="#35465c"/>
+  <path d="M254 344h172v12H254z" fill="#253448"/>
+  <path d="M310 356h60l13 89h-86z" fill="#53677e"/>
+  <path d="M275 443h128v12H275z" rx="6" fill="#35465c"/>
+  <rect x="177" y="106" width="286" height="192" rx="16" fill="#26364a"/>
+  <rect x="191" y="120" width="258" height="163" rx="7" fill="#83c9e8"/>
+  <path d="M193 246c43-34 75-38 112-11 38 27 68 23 144-27v75H193z" fill="#5a8eab"/>
+  <path d="M193 266c48-35 87-31 125-7 37 24 78 21 131-9v33H193z" fill="#42758f"/>
+  <path d="M318 298h8v24h-8z" fill="#53677e"/>
+  <rect x="83" y="316" width="474" height="28" rx="7" fill="url(#wood)"/>
+  <path d="M112 344h22v104h-22zm394 0h22v104h-22z" fill="#805035"/>
+  <path d="M100 448h46m348 0h46" stroke="#59402f" stroke-width="12" stroke-linecap="round"/>
+  <rect x="215" y="361" width="86" height="8" rx="4" fill="#d7a47d" opacity=".75"/>
+  <path d="M492 205v48m-21-26h42" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+</svg>

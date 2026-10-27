@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title description">
+  <title id="title">Keripik kentang</title>
+  <desc id="description">Keripik kentang renyah disajikan dalam mangkuk.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff5d9"/>
+      <stop offset="1" stop-color="#ffe2b7"/>
+    </linearGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef6b48"/>
+      <stop offset="1" stop-color="#c94034"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe995"/>
+      <stop offset="1" stop-color="#eaa52e"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" rx="28" fill="url(#background)"/>
+  <circle cx="320" cy="228" r="166" fill="#fff" opacity=".48"/>
+  <ellipse cx="320" cy="370" rx="184" ry="25" fill="#b77443" opacity=".16"/>
+  <g stroke="#c88726" stroke-width="5" stroke-linejoin="round">
+    <path d="M183 250c-15-34 2-82 35-91 35-10 62 30 55 64-7 32-35 62-62 57-13-2-22-15-28-30z" fill="url(#chip)"/>
+    <path d="M251 211c-8-38 17-78 51-79 37-1 54 44 39 75-14 30-49 51-73 39-10-5-14-19-17-35z" fill="#ffd96c"/>
+    <path d="M326 204c1-36 32-68 64-60 35 9 42 54 22 80-20 27-58 39-78 22-8-7-9-24-8-42z" fill="url(#chip)"/>
+    <path d="M390 242c10-33 47-55 76-39 31 17 24 60-2 80-27 21-66 22-81 1-7-9 2-27 7-42z" fill="#ffdb72"/>
+    <path d="M208 185c-3-31 20-61 47-59 30 2 41 37 26 61-16 25-48 38-65 24-7-6-7-17-8-26z" fill="#ffe58c"/>
+    <path d="M278 157c5-28 33-49 57-38 26 12 23 48 3 65-21 17-53 20-65 2-5-7 2-20 5-29z" fill="#f3bd46"/>
+    <path d="M354 159c10-26 41-40 62-24 23 18 12 51-11 65-24 14-55 9-63-11-3-8 8-21 12-30z" fill="#ffe58c"/>
+  </g>
+  <path d="M157 275h326c-12 93-69 145-163 145s-151-52-163-145z" fill="url(#bowl)"/>
+  <ellipse cx="320" cy="276" rx="165" ry="35" fill="#ff8661"/>
+  <path d="M185 293c37 28 233 28 270 0" fill="none" stroke="#f8a087" stroke-width="8" stroke-linecap="round"/>
+  <path d="M266 366c23 13 85 13 108 0" fill="none" stroke="#a9322d" stroke-width="7" stroke-linecap="round" opacity=".6"/>
+  <g fill="#fff" opacity=".82">
+    <circle cx="119" cy="150" r="7"/>
+    <circle cx="518" cy="184" r="6"/>
+    <circle cx="490" cy="330" r="8"/>
+    <path d="M125 286l6 13 14 2-11 9 3 14-12-7-12 7 3-14-11-9 14-2z"/>
+    <path d="M505 92l5 11 12 2-9 8 2 12-10-6-10 6 2-12-9-8 12-2z"/>
+  </g>
+</svg>
