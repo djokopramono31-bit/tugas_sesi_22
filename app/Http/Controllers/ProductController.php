@@ -10,6 +10,7 @@ use Illuminate\View\View;
 
 class ProductController extends Controller
 {
+    // Menampilkan daftar produk
     public function index(): View
     {
         $products = Product::orderBy('id')->get();
@@ -17,6 +18,18 @@ class ProductController extends Controller
         return view('products.index', compact('products'));
     }
 
+    // Menampilkan detail produk dan menghitung klik
+    public function show($id): View
+    {
+        $product = Product::findOrFail($id);
+
+        // Menambahkan jumlah klik sebanyak 1
+        $product->increment('klik');
+
+        return view('products.show', compact('product'));
+    }
+
+    // Menampilkan form tambah produk
     public function create(): View
     {
         $categories = ProductCategory::orderBy('name')->get();
@@ -24,6 +37,7 @@ class ProductController extends Controller
         return view('products.create', compact('categories'));
     }
 
+    // Menyimpan produk baru
     public function store(Request $request): RedirectResponse
     {
         $data = $this->validatedProductData($request);
@@ -51,6 +65,7 @@ class ProductController extends Controller
             ->with('success', 'Produk berhasil ditambahkan.');
     }
 
+    // Menampilkan form edit produk
     public function edit($id): View
     {
         $product = Product::findOrFail($id);
@@ -59,6 +74,7 @@ class ProductController extends Controller
         return view('products.edit', compact('product', 'categories'));
     }
 
+    // Memperbarui data produk
     public function update(Request $request, $id): RedirectResponse
     {
         $product = Product::findOrFail($id);
@@ -78,6 +94,7 @@ class ProductController extends Controller
             ->with('success', 'Produk berhasil diperbarui.');
     }
 
+    // Menghapus produk
     public function destroy($id): RedirectResponse
     {
         Product::findOrFail($id)->delete();

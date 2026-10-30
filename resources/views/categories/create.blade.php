@@ -13,7 +13,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container px-4">
         <div class="navbar-nav px-3">
-            <a class="nav-link fw-bold" href="{{ route('products.index') }}">
+            <a class="nav-link fw-bold" href="{{ route('dashboard') }}">
                 Dashboard
             </a>
             <a class="nav-link fw-bold" href="{{ route('products.index') }}">

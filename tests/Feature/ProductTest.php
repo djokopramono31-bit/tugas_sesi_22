@@ -18,11 +18,13 @@ class ProductTest extends TestCase
         $this->get(route('products.index'))
             ->assertOk()
             ->assertSee(route('products.create'))
+            ->assertDontSee('Toko Online')
             ->assertDontSee('pagination')
             ->assertSeeInOrder(['Dashboard', 'Produk']);
 
         $this->get(route('products.create'))
             ->assertOk()
+            ->assertDontSee('Toko Online')
             ->assertSee(route('products.store'))
             ->assertSee('class="form-control ', false)
             ->assertSee('class="form-select ', false)
@@ -121,10 +123,15 @@ class ProductTest extends TestCase
     {
         $this->get(route('products.index'))
             ->assertOk()
-            ->assertSee(
-                '<a href="/products" class="btn btn-sm btn-primary fw-bold me-2">Dashboard</a>'."\r\n".'        <a href="/products" class="btn btn-sm btn-primary fw-bold me-2">Produk</a>'."\r\n".'        <a href="/categories" class="btn btn-sm btn-primary fw-bold">Kategori Produk</a>',
-                false
-            );
+            ->assertSee('href="'.route('dashboard').'"', false)
+            ->assertSee('href="'.route('products.index').'"', false)
+            ->assertSee('href="'.route('categories.index').'"', false)
+            ->assertSeeInOrder(['Dashboard', 'Produk', 'Kategori Produk'])
+            ->assertSeeInOrder([
+                'nav-link fw-bold',
+                'href="'.route('categories.index').'"',
+                'Kategori Produk',
+            ], false);
     }
 
     public function test_add_product_page_loads_with_available_categories(): void
